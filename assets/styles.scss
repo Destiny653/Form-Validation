@@ -1,0 +1,172 @@
+@import "./settings/mixin";
+@import "./settings/variable";
+
+
+body {
+    // background: rgb(255, 223, 229);
+    font-family: 'Poppins', sans-serif;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // gap: 10px;
+    width: 50%;
+    height: 100vh;
+    p, h1 {
+        display: inline-flex;
+        padding-left: 17%; 
+    }
+    h1 {
+        @include EleFontswf(30px,900,$fontFam);
+    }
+    p {
+        @include EleFontswf(18px,400,$fontFam);
+    }
+ 
+    span {
+        @include EleFontswf(18px,400,$fontFam);
+        a{
+            color: #c01010;
+            font-weight: 600;
+        }
+    }
+}
+.colRight {
+    // background: rgb(253, 82, 3);
+    width: 50%;
+    height: 100vh;
+    img {
+        width: 800px;
+        height: 100vh;
+        border-radius: 15px;
+        // margin: 20px;
+        // margin-right: 25px;
+    }
+}
+
+.colParent {
+    display: flex;
+}
+
+
+    .btn {
+        position: absolute;
+        width: 90px;
+        height: 40px;
+        left: 8.5%;
+        top: 1.5%;
+        border-radius: 30px;
+        padding-top: 4px;
+        background-color: #fff;
+        border: 1px solid gray;
+        .fa {
+            border: none;
+            padding-top: 3px;
+            width: 17px;
+        }
+    }
+
+#form {
+    input,button {
+        width: 450px;
+        height: 50px;
+        border-radius: 30px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(197, 193, 193, 0.151);
+    }
+    button {
+        padding-top: 9px;
+        background-color: #c01010;
+        color: #fff;
+        border: none;
+        @include EleFontswf(18px,500,$fontFam);
+    }
+}
+
+// .input-control {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.input-control input {
+    padding-left: 50px;
+    padding-right: 15px;
+    font-size: 14px;
+    border: 2px solid #f0f0f0;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+    margin-left: 19%;
+    @include EleFontswf(12px,300,$fontFam);
+    
+}
+::placeholder {
+    @include EleFontswf(12px,300,$fontFam);
+}
+span {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    @include EleFontswf(30px,300,$fontFam);
+}
+.container {
+    .fa {
+        position: absolute;
+        padding-right: 7px;
+        font-size: 20px;
+        border-right: 1px solid #000;
+    }
+    .fa-envelope-o {
+        top: 54.5%;
+        left: 9.5%;
+    }
+    .fa-lock {
+        top: 65.2%;
+        left: 10%;
+    }
+    .lock1 {
+        top: 75.9%;
+    }
+    .per1 {
+        left: 9.5%;
+        top: 22%;
+    }
+    .per2 {
+        left: 9.5%;
+        top: 33%;
+    }
+    .fa-id-card {
+        left: 9.5%;
+        top: 43.5%;
+    }
+}
+
+   
